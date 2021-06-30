@@ -31,10 +31,12 @@ export default createGlobalStyle`
 
   h3 {
     font-weight: 400;
+    text-align: justify;
   }
 
   p {
     font-size: 16px;
+    text-align: justify;
   }
 
   button {

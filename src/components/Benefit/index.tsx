@@ -50,6 +50,26 @@ const Benefit: React.FC = () => {
                 consciência que o criou.
               </h3>
             </div>
+
+            <div className="item">
+              <span data-aos="zoom-in" data-aos-delay="600">
+                <FaCheckCircle />
+              </span>
+              <h3>
+                nenhum problema pode ser resolvido pelo mesmo estado de
+                consciência que o criou.
+              </h3>
+            </div>
+
+            <div className="item">
+              <span data-aos="zoom-in" data-aos-delay="600">
+                <FaCheckCircle />
+              </span>
+              <h3>
+                nenhum problema pode ser resolvido pelo mesmo estado de
+                consciência que o criou.
+              </h3>
+            </div>
           </div>
         </div>
 
