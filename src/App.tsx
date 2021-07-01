@@ -11,7 +11,6 @@ const App: React.FC = () => {
   useEffect(() => {
     Aos.init({
       duration: 500,
-      offset: 200,
     });
   }, []);
 

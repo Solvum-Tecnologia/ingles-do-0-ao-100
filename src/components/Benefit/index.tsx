@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { FaCheckCircle } from 'react-icons/fa';
-import Button from '../Button';
 import { Content, Container } from './styles';
 
 const Benefit: React.FC = () => {
@@ -16,8 +15,22 @@ const Benefit: React.FC = () => {
                 <FaCheckCircle />
               </span>
               <h3>
-                nenhum problema pode ser resolvido pelo mesmo estado de
-                consciência que o criou.
+                Não perca tempo procurando conteúdos avulsos de inglês na
+                internet, o Inglês do Zero ao Cem oferece todo o conteúdo que
+                você precisa para sair do Zero e chegar e a um nível de
+                comunicação avançado em inglês.
+              </h3>
+            </div>
+
+            <div className="item">
+              <span data-aos="zoom-in" data-aos-delay="100">
+                <FaCheckCircle />
+              </span>
+              <h3>
+                Aprenda e melhore seu inglês quando e onde estiver. Você não
+                precisa se deslocar e nem perder tempo indo para algum lugar
+                para estudar, as aulas estão disponíveis 24 horas por dia, 7
+                dias por semana em apenas alguns cliques.
               </h3>
             </div>
 
@@ -26,8 +39,22 @@ const Benefit: React.FC = () => {
                 <FaCheckCircle />
               </span>
               <h3>
-                nenhum problema pode ser resolvido pelo mesmo estado de
-                consciência que o criou.
+                Estude no seu próprio tempo. O estudo das aulas acontece de
+                forma individual, você pode estudar no seu próprio ritmo sem a
+                necessidade de esperar alguém ou ficar para trás.
+              </h3>
+            </div>
+
+            <div className="item">
+              <span data-aos="zoom-in" data-aos-delay="300">
+                <FaCheckCircle />
+              </span>
+              <h3>
+                Você não está sozinho! A maioria dos cursos só te entrega o
+                acesso ao curso e depois te abandona, no Inglês do Zero ao Cem
+                você terá acesso direto ao professor e a equipe para tirar
+                dúvidas e receber orientações, além de participar dos grupos de
+                interação dos alunos no WhatsApp.
               </h3>
             </div>
 
@@ -36,97 +63,25 @@ const Benefit: React.FC = () => {
                 <FaCheckCircle />
               </span>
               <h3>
-                nenhum problema pode ser resolvido pelo mesmo estado de
-                consciência que o criou.
+                O único curso de inglês que te oferece aula de conversação
+                semanal, feedback de pronúncia por WhatsApp, correção individual
+                e Plantão de dúvidas exclusivo para alunos.
               </h3>
             </div>
 
             <div className="item">
-              <span data-aos="zoom-in" data-aos-delay="600">
+              <span data-aos="zoom-in" data-aos-delay="500">
                 <FaCheckCircle />
               </span>
               <h3>
-                nenhum problema pode ser resolvido pelo mesmo estado de
-                consciência que o criou.
-              </h3>
-            </div>
-
-            <div className="item">
-              <span data-aos="zoom-in" data-aos-delay="600">
-                <FaCheckCircle />
-              </span>
-              <h3>
-                nenhum problema pode ser resolvido pelo mesmo estado de
-                consciência que o criou.
-              </h3>
-            </div>
-
-            <div className="item">
-              <span data-aos="zoom-in" data-aos-delay="600">
-                <FaCheckCircle />
-              </span>
-              <h3>
-                nenhum problema pode ser resolvido pelo mesmo estado de
-                consciência que o criou.
+                Cada aulas contém material de apoio, slides e exercícios de
+                fixação, e as aulas que contém bastante vocabulário também
+                possuem uma lista de estudo e memorização através do aplicativo
+                Quizlet.
               </h3>
             </div>
           </div>
         </div>
-
-        <div className="view-left">
-          <div className="background" data-aos="fade-right" />
-
-          <div className="item">
-            <div>
-              <h2 data-aos="fade-down" data-aos-delay="400">
-                o que é o curso é o inglês do zero ao cem?
-              </h2>
-              <p data-aos="fade-up" data-aos-delay="400">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industrys standard dummy text
-                ever since the 1500s,
-              </p>
-            </div>
-
-            <iframe
-              data-aos="fade-left"
-              data-aos-delay="400"
-              src="https://www.youtube.com/embed/HmZKgaHa3Fg"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        </div>
-
-        <div className="view-right">
-          <div className="background" data-aos="fade-left" />
-
-          <div className="item">
-            <iframe
-              data-aos-delay="400"
-              data-aos="fade-right"
-              src="https://www.youtube.com/embed/HmZKgaHa3Fg"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-
-            <div>
-              <h2 data-aos="fade-down" data-aos-delay="400">
-                o que é o curso é o inglês do zero ao cem?
-              </h2>
-              <p data-aos="fade-up" data-aos-delay="400">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industrys standard dummy text
-                ever since the 1500s,
-              </p>
-            </div>
-          </div>
-        </div>
-        <Button>Sim, Quero aprender inglês</Button>
       </Content>
     </Container>
   );

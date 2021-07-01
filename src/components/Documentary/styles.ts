@@ -12,30 +12,32 @@ export const Content = styled.div`
 
   display: flex;
   flex-wrap: wrap;
-  margin: 0 16px;
+  margin: 0 24px;
   margin-top: 80px;
 
   .profile {
     max-width: 400px;
     position: relative;
-    flex: 30%;
+    flex: calc(30% - 8px);
+    margin-left: 8px;
 
     img {
       border-radius: 8px;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      position: relative;
-      z-index: 1;
+      margin-left: -8px;
+      margin-top: -8px;
     }
 
-    .bg {
+    &::before {
+      content: '';
       background: ${props => props.theme.secondary};
       width: 100%;
       height: 100%;
       position: absolute;
-      top: 8px;
-      left: 8px;
+      top: 0;
+      left: 0;
     }
   }
 
@@ -64,7 +66,11 @@ export const Content = styled.div`
       flex: 100%;
       margin-top: 32px;
       padding: 0;
-      text-align: center;
+
+      h2,
+      h3 {
+        text-align: center;
+      }
 
       .border {
         margin: 24px auto;

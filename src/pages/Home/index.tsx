@@ -1,4 +1,5 @@
 import React from 'react';
+import Abstract from '../../components/Abstract';
 
 import Benefit from '../../components/Benefit';
 import Button from '../../components/Button';
@@ -23,17 +24,20 @@ const Home: React.FC = () => {
 
             <div className="text-men">
               <div className="text">
-                <h2 data-aos="zoom-in">inglês do zero ao cem</h2>
-                <h3 data-aos="fade-up" data-aos-delay="400">
-                  um dos cursos com mais recurso para aprendizado e prática de
-                  inglês do brasil.
+                <h2 data-aos="zoom-in">
+                  Você quer aprender Inglês do Zero absoluto até um nível
+                  avançado de comunicação?
+                </h2>
+                <h3 data-aos="fade-up" data-aos-delay="200">
+                  O Inglês do Zero ao Cem é o curso de inglês com mais recursos
+                  para aprendizado do país.
                 </h3>
               </div>
 
               <div className="men">
                 <img
                   data-aos="fade-up"
-                  data-aos-delay="800"
+                  data-aos-delay="400"
                   src="/assets/images/men.svg"
                   alt="men"
                 />
@@ -61,6 +65,8 @@ const Home: React.FC = () => {
       </Container>
 
       <Benefit />
+
+      <Abstract />
 
       <Documentary />
 

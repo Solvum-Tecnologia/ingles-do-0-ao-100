@@ -16,7 +16,7 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   padding: 24px 0;
-  margin: 0 16px;
+  margin: 0 24px;
 
   iframe {
     width: 400px;

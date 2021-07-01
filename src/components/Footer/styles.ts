@@ -10,7 +10,7 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
-  margin: 0 16px;
+  margin: 0 24px;
   flex: 1;
   max-width: 1136px;
   display: flex;

@@ -22,7 +22,6 @@ export default createGlobalStyle`
   h1, h2, h3, h4, h5, p {
     color: ${props => props.theme.primary};
     text-transform: uppercase;
-    letter-spacing: -1px;
   }
 
   h2 {

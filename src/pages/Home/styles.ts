@@ -1,16 +1,4 @@
-import styled, { keyframes } from 'styled-components';
-
-const animateRotate = keyframes`
-  0% {
-    transform: rotate(0) scale(0);
-    opacity: 0;
-  }
-
-  100% {
-    transform: rotate(405deg) scale(1);
-    opacity: 1;
-  }
-`;
+import styled from 'styled-components';
 
 export const Container = styled.section`
   display: flex;
@@ -24,49 +12,31 @@ export const Content = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 0 16px;
+  padding: 0 24px;
   overflow: hidden;
+  min-height: 80vh;
+  background: url('/assets/images/background.png') no-repeat;
+  background-size: cover;
 
-  &::before,
-  &::after {
-    content: '';
-    width: 807px;
-    height: 455px;
-    position: absolute;
-    background: url('/assets/images/eua.svg') no-repeat;
-    background-size: contain;
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    bottom: -20%;
-    left: -30%;
-    animation: ${animateRotate} 0.6s ease;
-    animation-fill-mode: backwards;
-  }
-  &::before {
-    top: -20%;
-    right: -30%;
-    animation: ${animateRotate} 0.6s ease;
-    animation-fill-mode: backwards;
-  }
-
-  div {
+  > div {
     z-index: 1;
     flex: 1;
     max-width: 1136px;
+    display: flex;
+    flex-wrap: wrap;
 
     .logo {
       margin-top: 32px;
+      flex: 100%;
+      align-self: center;
     }
 
     .text-men {
       display: flex;
-      padding-top: 50px;
-      max-height: 70vh;
 
       .text {
         flex: 70%;
+        align-self: center;
 
         h2 {
           font-weight: bold;
@@ -76,12 +46,15 @@ export const Content = styled.div`
         h3 {
           font-weight: 500;
           font-size: 24px;
-          margin-top: 8px;
+          margin-top: 24px;
         }
       }
 
       .men {
         flex: 30%;
+        display: flex;
+        align-self: flex-end;
+        margin-right: -24px;
 
         img {
           width: 100%;
@@ -116,50 +89,36 @@ export const Content = styled.div`
   }
 
   @media (max-width: 768px) {
-    .text-men {
-      .text {
-        h2 {
-          font-size: 24px;
+    > div {
+      .text-men {
+        .text {
+          h2 {
+            font-size: 24px;
+          }
+
+          h3 {
+            font-size: 16px;
+          }
+        }
+
+        .men {
+          max-height: 350px;
         }
       }
-
-      .men {
-        max-height: 350px;
-      }
-    }
-
-    &::after,
-    &::before {
-      display: none;
     }
   }
 
   @media (max-width: 576px) {
-    .text-men {
-      .text {
-        h2,
-        h3 {
-          font-size: 16px;
+    > div {
+      .text-men {
+        .men {
+          display: none;
         }
       }
     }
   }
 
   @media (max-width: 480px) {
-    .text-men {
-      padding: 50px 0;
-
-      .men {
-        display: none;
-      }
-    }
-  }
-
-  @media (max-height: 480px) {
-    &::after,
-    &::before {
-      display: none;
-    }
   }
 `;
 
@@ -168,11 +127,11 @@ export const Preview = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0 16px;
+  padding: 0 24px;
   z-index: 1;
 
   > div {
-    padding: 16px 0;
+    padding: 40px 0;
     h2 {
       text-align: center;
       font-size: 32px;
@@ -207,10 +166,6 @@ export const Preview = styled.div`
 
   @media (max-width: 576px) {
     > div {
-      h2 {
-        font-size: 16px;
-      }
-
       iframe {
         max-height: 200px;
       }

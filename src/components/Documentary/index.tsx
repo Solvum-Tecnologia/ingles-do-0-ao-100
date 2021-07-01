@@ -12,7 +12,6 @@ const Documentary: React.FC = () => {
             src="/assets/images/men_documentary.svg"
             alt="Foto aluno"
           />
-          <div data-aos="fade-up" className="bg" />
         </div>
         <div className="text">
           <h3 data-aos="zoom-in">Olá, eu sou o</h3>
@@ -23,15 +22,15 @@ const Documentary: React.FC = () => {
           <div data-aos="zoom-in" className="border" />
 
           <p data-aos="zoom-in" data-aos-delay="600">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Jader Lelis é um professor de inglês certificado pela Edgware
+            Academy de Londres e é apaixonado por idiomas, música e viagens! É
+            músico amador há 16 anos, entusiasta de aprendizado de idiomas,
+            professor de inglês há quase 7 anos, tendo ensinado mais de 400
+            alunos no Brasil e em vários países do mundo através de aulas
+            particulares e mais de 1.000 alunos através do curso on-line de
+            inglês. Jader também é o criador do podcast Inglês do Zero, o maior
+            podcast de aprendizado de inglês do país com mais de 7 milhões de
+            plays nas plataformas digitais.
           </p>
         </div>
       </Content>
