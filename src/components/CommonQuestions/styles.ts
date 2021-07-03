@@ -15,18 +15,19 @@ export const Content = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 24px 0;
+  padding: 40px 0;
   margin: 0 24px;
 
-  iframe {
-    width: 400px;
-    height: 250px;
+  .title {
+    /* width: 400px; */
     border-radius: 8px;
+    text-align: center;
   }
 
   .questions {
     flex: 1;
-    margin-left: 24px;
+    margin-top: 16px;
+    /* margin-left: 24px; */
 
     .item {
       display: flex;
@@ -35,24 +36,31 @@ export const Content = styled.div`
       align-items: center;
       transition: 0.3s ease all;
       border-radius: 8px;
+      cursor: pointer;
 
-      h2,
-      p {
-        color: ${props => props.theme.container};
-        padding-left: 16px;
+      > div {
+        flex: 1;
+        h3,
+        p {
+          color: ${props => props.theme.container};
+          padding-left: 16px;
+        }
+
+        h3 {
+          padding-top: 16px;
+          padding-bottom: 16px;
+          font-weight: 900;
+        }
+
+        p {
+          visibility: hidden;
+          opacity: 0;
+          height: 0;
+          transition: 0.3s ease all;
+        }
       }
 
-      h2 {
-        padding-top: 16px;
-        padding-bottom: 16px;
-      }
-
-      p {
-        visibility: hidden;
-        height: 0;
-      }
-
-      button {
+      span {
         background: none;
         border: none;
         padding: 8px 16px;
@@ -63,14 +71,17 @@ export const Content = styled.div`
       }
 
       &.active {
-        h2 {
-          padding-bottom: 0;
-        }
-        p {
-          visibility: visible;
-          height: auto;
-          padding-top: 16px;
-          padding-bottom: 16px;
+        > div {
+          h3 {
+            padding-bottom: 0;
+          }
+          p {
+            visibility: visible;
+            opacity: 1;
+            height: auto;
+            padding-top: 16px;
+            padding-bottom: 16px;
+          }
         }
       }
     }
@@ -80,15 +91,9 @@ export const Content = styled.div`
   }
 
   @media (max-width: 992px) {
-    iframe {
-      width: 100%;
-      max-width: 500px;
-    }
-
     .questions {
       flex: 100%;
       margin: 0;
-      margin-top: 40px;
     }
   }
 

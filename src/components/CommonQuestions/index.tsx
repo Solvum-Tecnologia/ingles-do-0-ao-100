@@ -1,34 +1,10 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useState, useCallback } from 'react';
 
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 import { Container, Content } from './styles';
 
-const questions = [
-  {
-    id: 1,
-    title: 'Pergunta',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nostrum quod, officiis sit iure sequi ipsam magnam voluptatem eum eligendi nemo, at aliquam optio eveniet ullam expedita dolore hic harum?',
-  },
-  {
-    id: 2,
-    title: 'Pergunta',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nostrum quod, officiis sit iure sequi ipsam magnam voluptatem eum eligendi nemo, at aliquam optio eveniet ullam expedita dolore hic harum?',
-  },
-  {
-    id: 3,
-    title: 'Pergunta',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nostrum quod, officiis sit iure sequi ipsam magnam voluptatem eum eligendi nemo, at aliquam optio eveniet ullam expedita dolore hic harum?',
-  },
-  {
-    id: 4,
-    title: 'Pergunta',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nostrum quod, officiis sit iure sequi ipsam magnam voluptatem eum eligendi nemo, at aliquam optio eveniet ullam expedita dolore hic harum?',
-  },
-];
+import questions from '../../utils/questions';
 
 const CommonQuestions: React.FC = () => {
   const [question, setQuestion] = useState(0);
@@ -48,28 +24,32 @@ const CommonQuestions: React.FC = () => {
   return (
     <Container>
       <Content>
-        <iframe
-          data-aos="fade-right"
-          src="https://www.youtube.com/embed/HmZKgaHa3Fg"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
+        <div className="title" data-aos="fade-right">
+          <h2>
+            Aqui estamos respondendo as dúvidas que mais recebemos a respeito do
+            curso. Caso tenha algo que não tenha sido esclarecido não tenha
+            vergonha de perguntar e nos contate no WhatsApp.
+          </h2>
+        </div>
 
         <div className="questions" data-aos="fade-left">
           {questions.map(item => (
+            // eslint-disable-next-line jsx-a11y/click-events-have-key-events
             <div
               className={`item ${question === item.id ? 'active' : ''}`}
               key={item.id}
+              onClick={() => handleQuestion(item.id)}
             >
               <div>
-                <h2>{item.title}</h2>
-                <p>{item.description}</p>
+                <h3>{item.title}</h3>
+
+                {item.description.map(desc => (
+                  <p key={desc}>{desc}</p>
+                ))}
               </div>
-              <button type="button" onClick={() => handleQuestion(item.id)}>
+              <span>
                 {item.id !== question ? <FaAngleDown /> : <FaAngleUp />}
-              </button>
+              </span>
             </div>
           ))}
         </div>

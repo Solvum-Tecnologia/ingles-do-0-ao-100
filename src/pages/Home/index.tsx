@@ -2,7 +2,7 @@ import React from 'react';
 import Abstract from '../../components/Abstract';
 
 import Benefit from '../../components/Benefit';
-import Button from '../../components/Button';
+import BuyButton from '../../components/BuyButton';
 import CommonQuestions from '../../components/CommonQuestions';
 import Documentary from '../../components/Documentary';
 import Feedback from '../../components/Feedback';
@@ -59,7 +59,8 @@ const Home: React.FC = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
-            <Button>Sim, Quero aprender inglês</Button>
+
+            <BuyButton />
           </div>
         </Preview>
       </Container>

@@ -86,6 +86,10 @@ export const Content = styled.div`
     }
   }
 
+  button {
+    margin-top: -62px;
+  }
+
   @media (max-width: 1200px) {
     .view-right,
     .view-left {

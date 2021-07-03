@@ -26,10 +26,37 @@ export const Content = styled.div`
       list-style: none;
       flex-wrap: wrap;
       justify-content: center;
+      margin: 0 -8px;
+
+      button {
+        &:disabled {
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        &.rec {
+          color: ${props => props.theme.primary};
+          background: ${props => shade(0.2, props.theme.background)};
+          border: none;
+          box-shadow: none;
+        }
+
+        &:hover {
+          background: ${props => props.theme.container};
+        }
+
+        &.rec-dot_active {
+          background: ${props => props.theme.container};
+        }
+      }
 
       li {
+        margin: 8px;
+        width: 100%;
+
         button {
           display: flex;
+          width: 100%;
           margin: 0 auto;
           color: ${props => props.theme.container};
           background: ${props => props.theme.secondary};
@@ -38,8 +65,10 @@ export const Content = styled.div`
           letter-spacing: -1px;
           padding: 16px;
           border: none;
-          font-size: 24px;
+          font-size: 16px;
           transition: 0.3s ease all;
+          border-radius: 8px;
+          justify-content: center;
 
           &:hover {
             background: ${props => shade(0.1, props.theme.secondary)};
@@ -51,7 +80,7 @@ export const Content = styled.div`
           }
         }
 
-        &:last-child {
+        /* &:last-child {
           button {
             border-radius: 0 8px 8px 0;
           }
@@ -60,7 +89,7 @@ export const Content = styled.div`
           button {
             border-radius: 8px 0 0 8px;
           }
-        }
+        } */
       }
     }
   }
@@ -73,16 +102,16 @@ export const Content = styled.div`
       flex-wrap: wrap;
       padding: 8px 0;
       border-radius: 8px;
+      align-items: center;
 
       p {
         padding: 16px;
-        flex: 70%;
         text-align: center;
 
-        &:last-child,
         &:first-child {
-          flex: 15%;
-          display: block;
+          padding-left: 24px;
+          font-weight: bold;
+          font-size: 900;
         }
       }
 
@@ -107,6 +136,10 @@ export const Content = styled.div`
       .item {
         p {
           flex: 100%;
+
+          &:first-child {
+            padding-bottom: 0;
+          }
         }
       }
     }

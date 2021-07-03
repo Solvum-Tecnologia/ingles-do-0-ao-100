@@ -1,8 +1,7 @@
 import React from 'react';
+import BuyButton from '../BuyButton';
 
 import { Container, Content } from './styles';
-
-import Button from '../Button';
 
 const Abstract: React.FC = () => {
   return (
@@ -71,7 +70,8 @@ const Abstract: React.FC = () => {
             </div>
           </div>
         </div>
-        <Button>Sim, Quero aprender inglês</Button>
+
+        <BuyButton />
       </Content>
     </Container>
   );

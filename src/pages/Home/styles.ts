@@ -23,16 +23,15 @@ export const Content = styled.div`
     flex: 1;
     max-width: 1136px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 
     .logo {
-      margin-top: 32px;
-      flex: 100%;
-      align-self: center;
+      margin-top: 50px;
     }
 
     .text-men {
       display: flex;
+      flex: 100%;
 
       .text {
         flex: 70%;
@@ -141,8 +140,7 @@ export const Preview = styled.div`
     flex: 1;
 
     button {
-      margin-top: 24px;
-      margin-bottom: 16px;
+      margin-bottom: -80px;
     }
 
     iframe {
