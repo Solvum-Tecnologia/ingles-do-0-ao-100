@@ -87,6 +87,7 @@ export const Content = styled.div`
   }
 
   button {
+    margin: 0 24px;
     margin-top: -62px;
   }
 

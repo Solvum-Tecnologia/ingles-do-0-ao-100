@@ -64,6 +64,7 @@ export const Content = styled.div`
     flex: 100%;
     display: flex;
     margin: 62px 0;
+    flex-wrap: wrap;
 
     h3 {
       flex: 50%;
@@ -111,6 +112,12 @@ export const Content = styled.div`
   @media (max-width: 992px) {
     .mobile {
       display: none;
+    }
+
+    .value-total {
+      h3 {
+        flex: 100%;
+      }
     }
   }
 `;

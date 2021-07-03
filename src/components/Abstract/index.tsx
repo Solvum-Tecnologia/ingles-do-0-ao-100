@@ -70,7 +70,6 @@ const Abstract: React.FC = () => {
             </div>
           </div>
         </div>
-
         <BuyButton />
       </Content>
     </Container>
