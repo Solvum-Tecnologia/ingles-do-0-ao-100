@@ -37,6 +37,7 @@ export const Button = styled.button`
 
   @media (max-width: 576px) {
     font-size: 18px;
+    letter-spacing: -1px;
 
     span {
       font-size: 14px;

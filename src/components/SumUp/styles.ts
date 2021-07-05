@@ -9,7 +9,8 @@ export const Container = styled.section`
 
 export const Content = styled.div`
   margin: 0 24px;
-  margin-top: 40px;
+  padding: 64px 0;
+  padding-bottom: 64px;
   flex: 1;
   max-width: 1136px;
   display: flex;
@@ -63,7 +64,7 @@ export const Content = styled.div`
   .value-total {
     flex: 100%;
     display: flex;
-    margin: 62px 0;
+    margin: 64px 0;
     flex-wrap: wrap;
 
     h3 {

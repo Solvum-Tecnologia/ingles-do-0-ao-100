@@ -15,7 +15,7 @@ export const Content = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 64px 0;
   margin: 0 24px;
 
   .title {

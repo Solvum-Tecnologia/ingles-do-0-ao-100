@@ -45,7 +45,7 @@ export const Content = styled.div`
         h3 {
           font-weight: 500;
           font-size: 24px;
-          margin-top: 24px;
+          margin-top: 16px;
         }
       }
 
@@ -88,6 +88,7 @@ export const Content = styled.div`
   }
 
   @media (max-width: 768px) {
+    min-height: 100vh;
     > div {
       .text-men {
         .text {
@@ -130,7 +131,8 @@ export const Preview = styled.div`
   z-index: 1;
 
   > div {
-    padding: 40px 0;
+    padding: 64px 0;
+
     h2 {
       text-align: center;
       font-size: 32px;
@@ -140,7 +142,7 @@ export const Preview = styled.div`
     flex: 1;
 
     button {
-      margin-bottom: -80px;
+      margin-bottom: -120px;
     }
 
     iframe {

@@ -15,7 +15,7 @@ export const Content = styled.div`
   .benefit {
     max-width: 1136px;
     margin: 0 16px;
-    margin-bottom: 40px;
+    margin-bottom: 64px;
 
     h2 {
       text-align: center;

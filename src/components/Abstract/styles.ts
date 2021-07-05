@@ -12,7 +12,7 @@ export const Content = styled.div`
     justify-content: center;
     margin: 24px 0;
     position: relative;
-    padding: 40px 24px;
+    padding: 64px 24px;
 
     .item {
       max-width: 1136px;
@@ -88,7 +88,7 @@ export const Content = styled.div`
 
   button {
     margin: 0 24px;
-    margin-top: -62px;
+    margin-top: -80px;
   }
 
   @media (max-width: 1200px) {

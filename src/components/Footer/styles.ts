@@ -6,7 +6,6 @@ export const Container = styled.section`
   justify-content: center;
   overflow: hidden;
   background: ${props => shade(0.5, props.theme.background)};
-  margin-top: 40px;
 `;
 
 export const Content = styled.div`
@@ -22,7 +21,6 @@ export const Content = styled.div`
   .col-2,
   .col-3 {
     padding: 40px 0;
-
     display: flex;
     justify-content: center;
 
