@@ -90,7 +90,7 @@ export const Content = styled.div`
   }
 
   .promotion {
-    margin-top: 24px;
+    margin-bottom: 24px;
     flex: 100%;
 
     h3 {

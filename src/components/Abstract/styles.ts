@@ -88,7 +88,7 @@ export const Content = styled.div`
 
   button {
     margin: 0 24px;
-    margin-top: -80px;
+    margin-top: -64px;
   }
 
   @media (max-width: 1200px) {

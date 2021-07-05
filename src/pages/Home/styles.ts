@@ -132,14 +132,13 @@ export const Preview = styled.div`
 
   > div {
     padding: 64px 0;
+    max-width: 1136px;
+    flex: 1;
 
     h2 {
       text-align: center;
       font-size: 32px;
-      margin-bottom: 16px;
     }
-    max-width: 1136px;
-    flex: 1;
 
     button {
       margin-bottom: -120px;
@@ -149,6 +148,8 @@ export const Preview = styled.div`
       width: 100%;
       height: 600px;
       border-radius: 8px;
+      margin-top: 32px;
+      margin-bottom: 16px;
     }
   }
 

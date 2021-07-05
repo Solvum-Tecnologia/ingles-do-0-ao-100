@@ -44,6 +44,7 @@ export const Content = styled.div`
         p {
           color: ${props => props.theme.container};
           padding-left: 16px;
+          text-align: initial;
         }
 
         h3 {
