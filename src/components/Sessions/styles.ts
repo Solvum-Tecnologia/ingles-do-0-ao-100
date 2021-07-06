@@ -9,17 +9,17 @@ export const Container = styled.section`
 
 export const Content = styled.div`
   margin: 0 24px;
-  margin-top: 80px;
+  margin-top: 6rem;
   flex: 1;
   max-width: 1136px;
 
   h2 {
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .menu {
-    margin-top: 24px;
+    margin-top: 1.5rem;
 
     ul {
       display: flex;
@@ -51,7 +51,7 @@ export const Content = styled.div`
       }
 
       li {
-        margin: 8px;
+        margin: 0.5rem;
         width: 100%;
 
         button {
@@ -63,9 +63,9 @@ export const Content = styled.div`
           font-weight: bolder;
           text-transform: uppercase;
           letter-spacing: -1px;
-          padding: 16px;
+          padding: 1rem;
           border: none;
-          font-size: 16px;
+          font-size: 1rem;
           transition: 0.3s ease all;
           border-radius: 8px;
           justify-content: center;
@@ -97,10 +97,10 @@ export const Content = styled.div`
   .items {
     .item {
       display: flex;
-      margin-top: 24px;
+      margin-top: 1.5rem;
       background: ${props => props.theme.container};
       flex-wrap: wrap;
-      padding: 8px 0;
+      padding: 0.5rem 0;
       border-radius: 8px;
       align-items: center;
 
@@ -109,7 +109,7 @@ export const Content = styled.div`
         text-align: center;
 
         &:first-child {
-          padding-left: 24px;
+          padding-left: 1.5rem;
           font-weight: bold;
           font-size: 900;
         }
@@ -151,7 +151,7 @@ export const Content = styled.div`
         li {
           button {
             margin: 4px;
-            border-radius: 8px !important;
+            border-radius: 0.5rem !important;
           }
         }
       }

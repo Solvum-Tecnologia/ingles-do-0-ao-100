@@ -6,11 +6,13 @@ import BuyButton from '../../components/BuyButton';
 import CommonQuestions from '../../components/CommonQuestions';
 import Documentary from '../../components/Documentary';
 import Feedback from '../../components/Feedback';
+import Differential from '../../components/Differential';
 import Footer from '../../components/Footer';
 import Sessions from '../../components/Sessions';
 import SumUp from '../../components/SumUp';
 
 import { Container, Content, Preview } from './styles';
+import Bonus from '../../components/Bonus';
 
 const Home: React.FC = () => {
   return (
@@ -74,6 +76,10 @@ const Home: React.FC = () => {
       <Sessions />
 
       <Feedback />
+
+      <Differential />
+
+      <Bonus />
 
       <CommonQuestions />
 

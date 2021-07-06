@@ -4,7 +4,7 @@ export const Container = styled.section`
   display: flex;
   justify-content: center;
   background: ${props => props.theme.container};
-  margin-top: 40px;
+  margin-top: 6rem;
   overflow: hidden;
 `;
 
@@ -15,8 +15,8 @@ export const Content = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 64px 0;
-  margin: 0 24px;
+  padding: 4rem 0;
+  margin: 0 1.5rem;
 
   .title {
     /* width: 400px; */
@@ -26,13 +26,13 @@ export const Content = styled.div`
 
   .questions {
     flex: 1;
-    margin-top: 16px;
+    margin-top: 1rem;
     /* margin-left: 24px; */
 
     .item {
       display: flex;
       background: ${props => props.theme.primary};
-      margin: 16px 0;
+      margin: 1rem 0;
       align-items: center;
       transition: 0.3s ease all;
       border-radius: 8px;
@@ -43,13 +43,13 @@ export const Content = styled.div`
         h3,
         p {
           color: ${props => props.theme.container};
-          padding-left: 16px;
+          padding-left: 1rem;
           text-align: initial;
         }
 
         h3 {
-          padding-top: 16px;
-          padding-bottom: 16px;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
           font-weight: 900;
         }
 
@@ -64,8 +64,8 @@ export const Content = styled.div`
       span {
         background: none;
         border: none;
-        padding: 8px 16px;
-        font-size: 24px;
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -80,8 +80,8 @@ export const Content = styled.div`
             visibility: visible;
             opacity: 1;
             height: auto;
-            padding-top: 16px;
-            padding-bottom: 16px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
           }
         }
       }
@@ -99,6 +99,11 @@ export const Content = styled.div`
   }
 
   @media (max-width: 768px) {
+    .title {
+      h2 {
+        text-align: justify;
+      }
+    }
   }
 
   @media (max-width: 576px) {

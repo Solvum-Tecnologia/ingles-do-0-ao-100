@@ -12,8 +12,8 @@ export const Content = styled.div`
 
   display: flex;
   flex-wrap: wrap;
-  margin: 0 24px;
-  margin-top: 80px;
+  margin: 0 1.5rem;
+  margin-top: 6rem;
 
   .profile {
     max-width: 400px;
@@ -28,6 +28,8 @@ export const Content = styled.div`
       object-fit: cover;
       margin-left: -8px;
       margin-top: -8px;
+      z-index: 2;
+      position: relative;
     }
 
     &::before {
@@ -38,6 +40,7 @@ export const Content = styled.div`
       position: absolute;
       top: 0;
       left: 0;
+      z-index: 1;
     }
   }
 

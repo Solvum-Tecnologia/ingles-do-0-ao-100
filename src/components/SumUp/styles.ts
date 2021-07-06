@@ -8,9 +8,9 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
-  margin: 0 24px;
-  padding: 64px 0;
-  padding-bottom: 64px;
+  margin: 0 1.5rem;
+  padding: 4rem 0;
+  padding-bottom: 4rem;
   flex: 1;
   max-width: 1136px;
   display: flex;
@@ -18,7 +18,7 @@ export const Content = styled.div`
   align-items: center;
 
   h2 {
-    font-size: 32px;
+    font-size: 2rem;
     flex: 100%;
     color: ${props => props.theme.secondary};
   }
@@ -31,11 +31,15 @@ export const Content = styled.div`
       display: flex;
       flex: 50%;
       align-items: center;
-      margin-top: 24px;
+      margin-top: 1.5rem;
 
       img {
-        width: 30px;
-        margin-right: 16px;
+        width: 1.5rem;
+        margin-right: 1rem;
+      }
+
+      h3 {
+        text-align: initial;
       }
 
       .title {
@@ -64,16 +68,16 @@ export const Content = styled.div`
   .value-total {
     flex: 100%;
     display: flex;
-    margin: 64px 0;
+    margin: 4rem 0;
     flex-wrap: wrap;
 
     h3 {
       flex: 50%;
       text-align: center;
-      font-size: 32px;
+      font-size: 2rem;
       background: ${props => shade(0.3, props.theme.background)};
-      margin-top: 24px;
-      padding: 32px 0;
+      margin-top: 1.5rem;
+      padding: 2rem 0;
       font-weight: 900;
 
       span {
@@ -90,7 +94,7 @@ export const Content = styled.div`
   }
 
   .promotion {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     flex: 100%;
 
     h3 {
@@ -99,13 +103,13 @@ export const Content = styled.div`
       margin-bottom: 8px;
 
       &.installment {
-        font-size: 32px;
+        font-size: 2rem;
         text-transform: none;
         font-weight: 900;
       }
 
       span {
-        font-size: 62px;
+        font-size: 5rem;
       }
     }
   }
@@ -119,6 +123,17 @@ export const Content = styled.div`
       h3 {
         flex: 100%;
       }
+    }
+
+    .promotion {
+      margin-top: -4rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      text-align: justify;
+      font-size: 1.5rem;
     }
   }
 `;

@@ -19,7 +19,7 @@ export const Button = styled.button`
   text-transform: uppercase;
   padding: 16px 24px;
   border: none;
-  font-size: 24px;
+  font-size: 1.5rem;
   transition: 0.3s ease all;
   align-items: center;
 
@@ -35,11 +35,11 @@ export const Button = styled.button`
   }
 
   @media (max-width: 576px) {
-    font-size: 18px;
+    font-size: 1.1rem;
     letter-spacing: -1px;
 
     span {
-      font-size: 14px;
+      font-size: 0.9rem;
     }
   }
 `;

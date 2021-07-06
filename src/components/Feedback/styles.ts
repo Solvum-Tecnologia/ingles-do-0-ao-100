@@ -1,3 +1,4 @@
+import { transparentize } from 'polished';
 import styled from 'styled-components';
 
 export const Container = styled.section`
@@ -9,11 +10,11 @@ export const Container = styled.section`
 export const Content = styled.div`
   flex: 1;
   max-width: 1136px;
-  margin: 0 24px;
-  margin-top: 80px;
+  margin: 0 1.5rem;
+  margin-top: 6rem;
 
   h2 {
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
   }
 
@@ -22,8 +23,8 @@ export const Content = styled.div`
     flex-wrap: wrap;
 
     .item {
-      padding: 24px 0;
-      padding-right: 24px;
+      padding: 1.5rem 0;
+      padding-right: 1.5rem;
       flex: 1;
 
       &:last-child {
@@ -38,12 +39,13 @@ export const Content = styled.div`
 
       h3 {
         font-weight: 900;
-        margin-top: 16px;
-        font-size: 24px;
+        margin-top: 1rem;
+        font-size: 1.5rem;
       }
 
       p {
-        margin-top: 8px;
+        margin-top: 0.5rem;
+        color: ${props => transparentize(0.2, props.theme.primary)};
       }
     }
   }
@@ -78,6 +80,9 @@ export const Content = styled.div`
   }
 
   @media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 
   @media (max-width: 576px) {

@@ -12,7 +12,7 @@ export const Content = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 0 24px;
+  padding: 0 1.5rem;
   overflow: hidden;
   min-height: 80vh;
   background: url('/assets/images/background.png') no-repeat;
@@ -26,7 +26,7 @@ export const Content = styled.div`
     flex-direction: column;
 
     .logo {
-      margin-top: 50px;
+      margin-top: 4rem;
     }
 
     .text-men {
@@ -39,13 +39,13 @@ export const Content = styled.div`
 
         h2 {
           font-weight: bold;
-          font-size: 32px;
+          font-size: 2rem;
         }
 
         h3 {
           font-weight: 500;
-          font-size: 24px;
-          margin-top: 16px;
+          font-size: 1.5rem;
+          margin-top: 1rem;
         }
       }
 
@@ -93,11 +93,11 @@ export const Content = styled.div`
       .text-men {
         .text {
           h2 {
-            font-size: 24px;
+            font-size: 1.5rem;
           }
 
           h3 {
-            font-size: 16px;
+            font-size: 1rem;
           }
         }
 
@@ -127,28 +127,28 @@ export const Preview = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0 24px;
+  padding: 0 1.5rem;
   z-index: 1;
 
   > div {
-    padding: 64px 0;
+    padding: 4rem 0;
     max-width: 1136px;
     flex: 1;
 
     h2 {
       text-align: center;
-      font-size: 32px;
+      font-size: 2rem;
     }
 
     button {
-      margin-bottom: -120px;
+      margin-bottom: -8rem;
     }
 
     iframe {
       width: 100%;
       height: 600px;
       border-radius: 8px;
-      margin-top: 32px;
+      margin-top: 2rem;
       margin-bottom: 16px;
     }
   }
@@ -156,7 +156,7 @@ export const Preview = styled.div`
   @media (max-width: 768px) {
     > div {
       h2 {
-        font-size: 24px;
+        font-size: 1.5rem;
       }
 
       iframe {

@@ -10,16 +10,15 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
+  padding: 6rem 0;
 
   .benefit {
     max-width: 1136px;
     margin: 0 16px;
-    margin-bottom: 64px;
 
     h2 {
       text-align: center;
-      font-size: 32px;
+      font-size: 2rem;
     }
 
     .items {
@@ -32,9 +31,9 @@ export const Content = styled.div`
         display: flex;
 
         span {
-          margin-right: 8px;
-          font-size: 24px;
-          margin-top: 4px;
+          margin-right: 0.5rem;
+          font-size: 1.5rem;
+          margin-top: 0.2rem;
           color: ${props => props.theme.secondary};
         }
       }
@@ -46,13 +45,13 @@ export const Content = styled.div`
 
   @media (max-width: 768px) {
     h2 {
-      font-size: 24px;
+      font-size: 1.5rem;
     }
   }
 
   @media (max-width: 576px) {
     h2 {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 `;

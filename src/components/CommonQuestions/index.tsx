@@ -4,7 +4,7 @@ import React, { useState, useCallback } from 'react';
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 import { Container, Content } from './styles';
 
-import questions from '../../utils/questions';
+import questions from '../../db/questions';
 
 const CommonQuestions: React.FC = () => {
   const [question, setQuestion] = useState(0);

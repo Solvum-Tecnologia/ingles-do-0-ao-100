@@ -4,7 +4,7 @@ import Carousel from 'react-elastic-carousel';
 
 import { Container, Content } from './styles';
 
-import modules from '../../utils/modules';
+import modules from '../../db/modules';
 
 const Sessions: React.FC = () => {
   const [session, setSession] = useState(1);

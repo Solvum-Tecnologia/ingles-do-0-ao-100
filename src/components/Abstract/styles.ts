@@ -10,9 +10,9 @@ export const Content = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 24px 0;
+    margin-bottom: 1.5rem;
     position: relative;
-    padding: 64px 24px;
+    padding: 4rem 1.5rem;
 
     .item {
       max-width: 1136px;
@@ -22,17 +22,17 @@ export const Content = styled.div`
 
       > div {
         flex: 50%;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
 
         h2 {
           color: ${props => props.theme.secondary};
-          font-size: 24px;
+          font-size: 2rem;
         }
 
         p {
           font-weight: 400;
           margin-top: 16px;
-          font-size: 16px;
+          font-size: 1rem;
         }
       }
 
@@ -113,13 +113,15 @@ export const Content = styled.div`
   }
 
   @media (max-width: 768px) {
-    h2 {
-      font-size: 24px;
-    }
-
     .view-right,
     .view-left {
       .item {
+        > div {
+          h2 {
+            font-size: 1.5rem;
+          }
+        }
+
         iframe {
           height: 350px;
         }
@@ -128,14 +130,16 @@ export const Content = styled.div`
   }
 
   @media (max-width: 576px) {
-    h2 {
-      font-size: 16px;
-    }
-
     .benefit {
       .items {
         .item {
-          flex: 100%;
+          > div {
+            flex: 100%;
+          }
+
+          h2 {
+            font-size: 1rem;
+          }
         }
       }
     }
