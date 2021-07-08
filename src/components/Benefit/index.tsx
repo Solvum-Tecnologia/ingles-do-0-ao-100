@@ -8,7 +8,7 @@ const Benefit: React.FC = () => {
     <Container>
       <Content>
         <div className="benefit">
-          <h2>benefícios do curso</h2>
+          <h2>Benefícios do curso</h2>
           <div className="items">
             <div className="item">
               <span data-aos="zoom-in">

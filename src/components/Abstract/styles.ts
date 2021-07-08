@@ -24,9 +24,10 @@ export const Content = styled.div`
         flex: 50%;
         margin-bottom: 1rem;
 
-        h2 {
+        h3 {
           color: ${props => props.theme.secondary};
-          font-size: 2rem;
+          font-size: 1.6rem;
+          font-weight: 900;
         }
 
         p {
@@ -117,7 +118,7 @@ export const Content = styled.div`
     .view-left {
       .item {
         > div {
-          h2 {
+          h3 {
             font-size: 1.5rem;
           }
         }
@@ -137,7 +138,7 @@ export const Content = styled.div`
             flex: 100%;
           }
 
-          h2 {
+          h3 {
             font-size: 1rem;
           }
         }

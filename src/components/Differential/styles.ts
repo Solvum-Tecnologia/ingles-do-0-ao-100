@@ -56,6 +56,7 @@ export const Content = styled.div`
         font-size: 1.2rem;
         font-weight: 900;
         letter-spacing: -0.5px;
+        text-align: initial;
       }
 
       p {

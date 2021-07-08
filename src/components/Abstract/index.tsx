@@ -12,9 +12,9 @@ const Abstract: React.FC = () => {
 
           <div className="item">
             <div>
-              <h2 data-aos="fade-down" data-aos-delay="200">
+              <h3 data-aos="fade-down" data-aos-delay="200">
                 O que é o curso Inglês do Zero ao Cem?
-              </h2>
+              </h3>
               <p data-aos="fade-up" data-aos-delay="300">
                 Um curso de inglês completo com um método diferenciado e focado
                 em um ensino leve e descontraído com explicações claras e
@@ -58,9 +58,9 @@ const Abstract: React.FC = () => {
             />
 
             <div>
-              <h2 data-aos="fade-down" data-aos-delay="400">
+              <h3 data-aos="fade-down" data-aos-delay="400">
                 Como acessar as aulas do curso?
-              </h2>
+              </h3>
               <p data-aos="fade-up" data-aos-delay="400">
                 Como acessar as aulas do curso? No vídeo ao lado você verá como
                 é simples acessar todos os recursos que o Inglês do Zero ao Cem

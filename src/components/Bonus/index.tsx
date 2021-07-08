@@ -35,7 +35,7 @@ const Bonus: React.FC = () => {
     <Container>
       <Content data-aos="zoom-in" data-aos-id="test">
         <div className="title">
-          <h2>BÔNUS EXCLUSIVOS PARA A PRÓXIMA TURMA</h2>
+          <h2>Bônus exclusivos para a próxima turma</h2>
         </div>
         <div className="items">
           <div className="item">
@@ -50,7 +50,7 @@ const Bonus: React.FC = () => {
             <span>
               <FaBook />
             </span>
-            <h2>E-book:</h2>
+            <h2>E-book</h2>
             <h3>English for travel – Inglês para viagens</h3>
           </div>
 

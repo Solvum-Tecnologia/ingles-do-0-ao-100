@@ -24,11 +24,13 @@ export const Content = styled.div`
     .items {
       display: flex;
       flex-wrap: wrap;
+      margin-top: 1rem;
 
       .item {
         flex: 50%;
         padding: 24px 16px;
         display: flex;
+        min-width: 250px;
 
         span {
           margin-right: 0.5rem;

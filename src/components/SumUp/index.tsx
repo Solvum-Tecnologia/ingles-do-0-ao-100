@@ -23,8 +23,8 @@ const SumUp: React.FC = () => {
     <Container>
       <Content>
         <h2 data-aos="zoom-in">
-          RECAPITULANDO TUDO O QUE VOCÊ VAI RECEBER AO SE MATRICULAR AGORA NO
-          CURSO.
+          Recapitulando tudo o que você vai receber ao se matricular agora no
+          curso.
         </h2>
 
         <div className="topics">
