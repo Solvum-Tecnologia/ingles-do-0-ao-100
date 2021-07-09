@@ -46,10 +46,12 @@ export const Content = styled.div`
       margin: 0.75rem;
       border-radius: 8px;
 
-      h2 {
-        font-size: 3rem;
-        text-align: right;
-        color: ${props => transparentize(0.8, props.theme.primary)};
+      span {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 3rem;
+        }
       }
 
       h3 {
@@ -57,10 +59,13 @@ export const Content = styled.div`
         font-weight: 900;
         letter-spacing: -0.5px;
         text-align: initial;
+        margin-top: 1rem;
+        text-align: center;
       }
 
       p {
         margin-top: 1rem;
+        text-align: center;
         color: ${props => transparentize(0.2, props.theme.primary)};
       }
     }

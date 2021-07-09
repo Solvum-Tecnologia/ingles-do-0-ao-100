@@ -16,7 +16,9 @@ const Differential: React.FC = () => {
         <div className="items">
           {differentials.map(item => (
             <div data-aos="zoom-in" className="item" key={item.id}>
-              <h2>{item.id.toString().padStart(2, '0')}</h2>
+              <span>
+                <img src={`/assets/icons/${item.icon}`} alt="" />
+              </span>
               <h3>{item.title}</h3>
               <p> {item.description} </p>
             </div>
