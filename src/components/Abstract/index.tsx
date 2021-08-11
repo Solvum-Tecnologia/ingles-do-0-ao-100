@@ -20,7 +20,7 @@ const Abstract: React.FC = () => {
                 em um ensino leve e descontraído com explicações claras e
                 diretas de forma que todo aluno entenda e absorva o conteúdo da
                 melhor forma possível. O conteúdo é apresentado de forma
-                cronológica, lógica e organizada e aulas conduzem o aluno não
+                cronológica, lógica e organizada e as aulas conduzem o aluno não
                 apenas a assistir mas também a praticar a parte ativa do idioma.
               </p>
 
@@ -62,15 +62,19 @@ const Abstract: React.FC = () => {
                 Como acessar as aulas do curso?
               </h3>
               <p data-aos="fade-up" data-aos-delay="400">
-                Como acessar as aulas do curso? No vídeo ao lado você verá como
-                é simples acessar todos os recursos que o Inglês do Zero ao Cem
-                oferece de forma simples e totalmente online e até mesmo offline
-                através do aplicativo Hotmart sparkles.
+                No vídeo acima você verá como acessar todos os recursos que o
+                Inglês do Zero ao Cem oferece de forma simples, totalmente
+                online e até mesmo offline por meio do aplicativo Hotmart
+                sparkles.
               </p>
             </div>
           </div>
         </div>
-        <BuyButton />
+
+        <BuyButton
+          title="Sim, Quero aprender inglês"
+          subtitle="Clique aqui para garantir sua matrícula"
+        />
       </Content>
     </Container>
   );

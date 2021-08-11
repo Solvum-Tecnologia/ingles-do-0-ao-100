@@ -32,10 +32,12 @@ export const Content = styled.div`
     .text-men {
       display: flex;
       flex: 100%;
+      justify-content: space-between;
 
       .text {
         flex: 70%;
         align-self: center;
+        max-width: 700px;
 
         h2 {
           font-weight: bold;
@@ -54,6 +56,7 @@ export const Content = styled.div`
         display: flex;
         align-self: flex-end;
         margin-right: -24px;
+        max-width: 300px;
 
         img {
           width: 100%;
@@ -85,6 +88,18 @@ export const Content = styled.div`
       top: -50%;
       right: -60%;
     }
+
+    > div {
+      .text-men {
+        .text {
+          max-width: 500px;
+        }
+
+        .men {
+          max-width: 250px;
+        }
+      }
+    }
   }
 
   @media (max-width: 768px) {
@@ -92,6 +107,7 @@ export const Content = styled.div`
     > div {
       .text-men {
         .text {
+          max-width: 400px;
           h2 {
             font-size: 1.5rem;
           }
@@ -111,8 +127,11 @@ export const Content = styled.div`
   @media (max-width: 576px) {
     > div {
       .text-men {
-        .men {
-          display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        .text {
+          margin-top: 100px;
+          min-width: 100%;
         }
       }
     }
@@ -140,7 +159,7 @@ export const Preview = styled.div`
       font-size: 2rem;
     }
 
-    button {
+    a {
       margin-bottom: -8rem;
     }
 

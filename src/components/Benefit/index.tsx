@@ -17,7 +17,7 @@ const Benefit: React.FC = () => {
               <h3>
                 Não perca tempo procurando conteúdos avulsos de inglês na
                 internet, o Inglês do Zero ao Cem oferece todo o conteúdo que
-                você precisa para sair do Zero e chegar e a um nível de
+                você precisa para sair do Zero e chegar a um nível de
                 comunicação avançado em inglês.
               </h3>
             </div>
@@ -74,10 +74,9 @@ const Benefit: React.FC = () => {
                 <FaCheckCircle />
               </span>
               <h3>
-                Cada aulas contém material de apoio, slides e exercícios de
-                fixação, e as aulas que contém bastante vocabulário também
-                possuem uma lista de estudo e memorização através do aplicativo
-                Quizlet.
+                Todas as aulas contém material de apoio, slides e exercícios de
+                fixação, e as aulas com muito vocabulário também possuem uma
+                lista de estudo e memorização através do aplicativo Quizlet.
               </h3>
             </div>
           </div>

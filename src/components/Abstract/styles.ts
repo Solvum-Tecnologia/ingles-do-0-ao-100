@@ -87,7 +87,7 @@ export const Content = styled.div`
     }
   }
 
-  button {
+  a {
     margin: 0 24px;
     margin-top: -64px;
   }

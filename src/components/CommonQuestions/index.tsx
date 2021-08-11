@@ -26,7 +26,7 @@ const CommonQuestions: React.FC = () => {
       <Content>
         <div className="title" data-aos="fade-right">
           <h2>
-            Aqui estamos respondendo as dúvidas que mais recebemos a respeito do
+            Aqui responderemos as dúvidas que mais recebemos a respeito do
             curso. Caso tenha algo que não tenha sido esclarecido não tenha
             vergonha de perguntar e nos contate no WhatsApp.
           </h2>

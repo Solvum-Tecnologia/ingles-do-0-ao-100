@@ -62,7 +62,10 @@ const Home: React.FC = () => {
               allowFullScreen
             />
 
-            <BuyButton />
+            <BuyButton
+              title="Me avise com prioridade"
+              href="https://www.inglesdozeroaocem.com.br/espera"
+            />
           </div>
         </Preview>
       </Container>

@@ -72,7 +72,10 @@ const SumUp: React.FC = () => {
           </h3>
         </div>
 
-        <BuyButton />
+        <BuyButton
+          title="Sim, Quero aprender inglês"
+          subtitle="Clique aqui para garantir sua matrícula"
+        />
       </Content>
     </Container>
   );
