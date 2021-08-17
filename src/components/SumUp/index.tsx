@@ -12,13 +12,6 @@ const SumUp: React.FC = () => {
     0,
   );
 
-  const value = 1165.68;
-
-  const installment = (value / 12).toString().split('.');
-
-  const value1 = installment[0];
-  const value2 = installment[1];
-
   return (
     <Container>
       <Content>
@@ -65,10 +58,10 @@ const SumUp: React.FC = () => {
 
         <div className="promotion">
           <h3 data-aos="zoom-in-down" className="installment">
-            12x de <span>{value1},</span> {value2}
+            12x de <span>97,</span>14
           </h3>
           <h3 data-aos="zoom-in-down" data-aos-delay="200">
-            Ou {formatNumber(value - value * 0.15)} à vista
+            Ou {formatNumber(997)} à vista
           </h3>
         </div>
 

@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="col-3">
           <a
-            href="https://api.whatsapp.com/send?phone=55859999999999"
+            href="https://api.whatsapp.com/send?phone=5511989809037"
             target="_blank"
             rel="noopener noreferrer"
           >
