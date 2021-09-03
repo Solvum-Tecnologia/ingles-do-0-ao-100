@@ -19,9 +19,7 @@ const Abstract: React.FC = () => {
                 Um curso de inglês completo com um método diferenciado e focado
                 em um ensino leve e descontraído com explicações claras e
                 diretas de forma que todo aluno entenda e absorva o conteúdo da
-                melhor forma possível. O conteúdo é apresentado de forma
-                cronológica, lógica e organizada e as aulas conduzem o aluno não
-                apenas a assistir mas também a praticar a parte ativa do idioma.
+                melhor forma possível.
               </p>
 
               <p data-aos="fade-up" data-aos-delay="400">

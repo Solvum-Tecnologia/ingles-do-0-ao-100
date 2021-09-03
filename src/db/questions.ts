@@ -19,7 +19,7 @@ const questions = [
     id: 3,
     title: 'O curso possui material de apoio?',
     description: [
-      'Cada aula contém exercícios para prática ou lista uma lista para estudo, além de tarefas ao término de cada uma delas.',
+      'Cada aula contém exercícios para prática ou uma lista para estudo, além de tarefas ao término de cada uma delas.',
     ],
   },
 

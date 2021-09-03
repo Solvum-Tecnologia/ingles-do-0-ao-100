@@ -26,7 +26,7 @@ const Documentary: React.FC = () => {
             Academy de Londres e é apaixonado por idiomas, música e viagens! É
             músico amador há 16 anos, entusiasta de aprendizado de idiomas,
             professor de inglês há quase 7 anos, tendo ensinado mais de 400
-            alunos no Brasil e em vários países do mundo através de aulas
+            alunos no Brasil e em vários países do mundo pro meio de aulas
             particulares e mais de 1.000 alunos através do curso on-line de
             inglês. Jader também é o criador do podcast Inglês do Zero, o maior
             podcast de aprendizado de inglês do país com mais de 7 milhões de

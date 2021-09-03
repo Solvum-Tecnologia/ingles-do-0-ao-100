@@ -65,7 +65,7 @@ const Benefit: React.FC = () => {
               <h3>
                 O único curso de inglês que te oferece aula de conversação
                 semanal, feedback de pronúncia por WhatsApp, correção individual
-                e Plantão de dúvidas exclusivo para alunos.
+                e plantão de dúvidas exclusivo para alunos.
               </h3>
             </div>
 
@@ -74,9 +74,9 @@ const Benefit: React.FC = () => {
                 <FaCheckCircle />
               </span>
               <h3>
-                Todas as aulas contém material de apoio, slides e exercícios de
-                fixação, e as aulas com muito vocabulário também possuem uma
-                lista de estudo e memorização através do aplicativo Quizlet.
+                Todas as aulas contêm material de apoio, slides e exercícios de
+                fixação,já aulas com muito vocabulário também possuem uma lista
+                de estudo e memorização através do aplicativo Quizlet.
               </h3>
             </div>
           </div>
