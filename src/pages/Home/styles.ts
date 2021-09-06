@@ -37,7 +37,13 @@ export const Content = styled.div`
       .text {
         flex: 70%;
         align-self: center;
-        max-width: 700px;
+
+        h2,
+        h3 {
+          text-align: left;
+          letter-spacing: -1px;
+          max-width: 580px;
+        }
 
         h2 {
           font-weight: bold;
@@ -48,6 +54,7 @@ export const Content = styled.div`
           font-weight: 500;
           font-size: 1.5rem;
           margin-top: 1rem;
+          margin-bottom: 24px;
         }
       }
 

@@ -31,8 +31,8 @@ const Home: React.FC = () => {
                   avançado de comunicação?
                 </h2>
                 <h3 data-aos="fade-up" data-aos-delay="200">
-                  O Inglês do Zero ao Cem é o curso de inglês com mais recursos
-                  para aprendizado do país.
+                  {`O Inglês do Zero ao Cem é o curso de inglês com mais recursos
+                  para aprendizado do país.`}
                 </h3>
               </div>
 
