@@ -13,17 +13,22 @@ import SumUp from '../../components/SumUp';
 
 import { Container, Content, Preview } from './styles';
 import Bonus from '../../components/Bonus';
+import MenImg from '../../assets/men.png';
 
 const Home: React.FC = () => {
   return (
     <>
       <Container>
+        <div className="background" />
+
         <Content>
-          <div>
+          <div className="header">
             <div className="logo">
               <img src="/assets/images/logo.svg" alt="INGLÊS DO 0 AO 100" />
             </div>
+          </div>
 
+          <div className="banner">
             <div className="text-men">
               <div className="text">
                 <h2 data-aos="zoom-in">
@@ -40,7 +45,7 @@ const Home: React.FC = () => {
                 <img
                   data-aos="fade-up"
                   data-aos-delay="400"
-                  src="/assets/images/men.svg"
+                  src={MenImg}
                   alt="men"
                 />
               </div>
@@ -55,7 +60,7 @@ const Home: React.FC = () => {
             </h2>
             <iframe
               data-aos="fade-up"
-              src="https://www.youtube.com/embed/HmZKgaHa3Fg"
+              src="https://www.youtube.com/embed/SlOjtIfAAnM"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

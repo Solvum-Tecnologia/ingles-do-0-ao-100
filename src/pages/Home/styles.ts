@@ -5,38 +5,53 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+
+  /* .background {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    min-height: 80vh;
+    background: url('/assets/images/background.png') no-repeat;
+    background-size: cover;
+    z-index: 1;
+  } */
 `;
 
 export const Content = styled.div`
-  width: 100%;
   display: flex;
-  justify-content: center;
-  position: relative;
-  padding: 0 1.5rem;
-  overflow: hidden;
-  min-height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 70vh;
+  z-index: 2;
+  padding: 0 24px;
+  padding-top: 24px;
   background: url('/assets/images/background.png') no-repeat;
   background-size: cover;
+  overflow: hidden;
 
-  > div {
-    z-index: 1;
-    flex: 1;
+  .header {
     max-width: 1136px;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+  }
 
-    .logo {
-      margin-top: 4rem;
-    }
+  .banner {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: center;
 
     .text-men {
+      max-width: 800px;
       display: flex;
       flex: 100%;
       justify-content: space-between;
 
       .text {
-        flex: 70%;
-        align-self: center;
+        flex: 50%;
+        padding-top: 24px;
 
         h2,
         h3 {
@@ -59,11 +74,11 @@ export const Content = styled.div`
       }
 
       .men {
-        flex: 30%;
+        flex: 50%;
         display: flex;
         align-self: flex-end;
         margin-right: -24px;
-        max-width: 300px;
+        max-width: 400px;
 
         img {
           width: 100%;

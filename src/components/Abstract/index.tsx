@@ -32,7 +32,7 @@ const Abstract: React.FC = () => {
             <iframe
               data-aos="fade-left"
               data-aos-delay="400"
-              src="https://www.youtube.com/embed/HmZKgaHa3Fg"
+              src="https://www.youtube.com/embed/UTbddj2enh0"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -48,7 +48,7 @@ const Abstract: React.FC = () => {
             <iframe
               data-aos-delay="400"
               data-aos="fade-right"
-              src="https://www.youtube.com/embed/HmZKgaHa3Fg"
+              src="https://www.youtube.com/embed/j29Qw6B9j_E"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
