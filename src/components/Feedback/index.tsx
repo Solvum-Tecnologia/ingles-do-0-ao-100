@@ -58,7 +58,27 @@ const feedbackArray = [
     description: '',
     urlVideo: 'https://www.youtube.com/embed/1kA-w-bL4H8',
   },
+  {
+    id: 'dbe2dd6d-0fa1-46e8-8cb3-ba12f28c8beb',
+    name: 'Livia',
+    description: '',
+    urlVideo: 'https://www.youtube.com/embed/CCAiT5SCVHg',
+  },
+  {
+    id: '9f2099da-c9af-44d7-933d-500c34e70868',
+    name: 'Sergio',
+    description: '',
+    urlVideo: 'https://www.youtube.com/embed/Jrf-QBbqfa8',
+  },
+  {
+    id: '9047947a-dda6-4a9f-842f-6d67db912a93',
+    name: 'Thairine',
+    description: '',
+    urlVideo: 'https://www.youtube.com/embed/og6fyVsJ0KY',
+  },
 ];
+
+let multiply = 0;
 
 const Feedback: React.FC = () => {
   const [viewPlus, setViewPlus] = useState(3);
@@ -73,11 +93,19 @@ const Feedback: React.FC = () => {
               return null;
             }
 
+            if (multiply < 3) {
+              multiply += 1;
+            } else {
+              multiply = 1;
+            }
+
+            console.log(multiply);
+
             return (
               <div key={feed.id} className="item">
                 <iframe
                   data-aos="fade-right"
-                  data-aos-delay={(viewPlus / 3 - index) * 200}
+                  data-aos-delay={multiply * 100}
                   src={feed.urlVideo}
                   title="YouTube video player"
                   frameBorder="0"
@@ -85,7 +113,7 @@ const Feedback: React.FC = () => {
                   allowFullScreen
                 />
                 <h3 data-aos="fade-up">{feed.name}</h3>
-                <p data-aos="fade-up" data-aos-delay={index * 100}>
+                <p data-aos="fade-up" data-aos-delay={multiply * 100}>
                   {feed.description}
                 </p>
               </div>
