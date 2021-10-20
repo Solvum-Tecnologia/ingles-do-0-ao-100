@@ -99,8 +99,6 @@ const Feedback: React.FC = () => {
               multiply = 1;
             }
 
-            console.log(multiply);
-
             return (
               <div key={feed.id} className="item">
                 <iframe

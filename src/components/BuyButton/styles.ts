@@ -35,12 +35,11 @@ export const Button = styled.a`
     background: ${props => shade(0.2, props.theme.secondary)};
   }
 
-  @media (max-width: 576px) {
-    font-size: 1.1rem;
-    letter-spacing: -1px;
+  @media (max-width: 767.98px) {
+    font-size: 0.9rem;
 
     span {
-      font-size: 0.9rem;
+      font-size: 0.6rem;
     }
   }
 `;

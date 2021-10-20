@@ -14,6 +14,7 @@ import SumUp from '../../components/SumUp';
 import { Container, Content, Preview } from './styles';
 import Bonus from '../../components/Bonus';
 import MenImg from '../../assets/men.png';
+import { ButtonWhatsapp } from '../../components/ButtonWhatsapp';
 
 const Home: React.FC = () => {
   return (
@@ -67,10 +68,7 @@ const Home: React.FC = () => {
               allowFullScreen
             />
 
-            <BuyButton
-              title="Me avise com prioridade"
-              href="https://www.inglesdozeroaocem.com.br/espera"
-            />
+            <BuyButton />
           </div>
         </Preview>
       </Container>
@@ -94,6 +92,8 @@ const Home: React.FC = () => {
       <SumUp />
 
       <Footer />
+
+      <ButtonWhatsapp />
     </>
   );
 };

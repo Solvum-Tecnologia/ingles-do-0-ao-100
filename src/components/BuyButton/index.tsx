@@ -2,23 +2,32 @@ import React, { AnchorHTMLAttributes } from 'react';
 
 import { Container, Button } from './styles';
 
-interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
-  title: string;
-  subtitle?: string;
-}
+type Props = AnchorHTMLAttributes<HTMLAnchorElement>;
 
-const BuyButton: React.FC<Props> = ({ title, subtitle, ...rest }) => {
+const BuyButton: React.FC<Props> = ({ ...rest }) => {
+  const active = false;
+
   return (
     <Container>
       <Button
+        href={
+          active
+            ? 'https://payment.hotmart.com/K39846527P?checkoutMode=10'
+            : 'https://www.inglesdozeroaocem.com.br/espera'
+        }
         data-aos="zoom-in"
         {...rest}
         target="_blank"
         rel="noopener noreferrer"
       >
-        {title}
-
-        {subtitle && <span>Clique aqui para garantir sua matrícula</span>}
+        {active ? (
+          <>
+            Sim, Quero aprender inglês
+            <span>Clique aqui para garantir sua matrícula</span>
+          </>
+        ) : (
+          <>Me avise com prioridade</>
+        )}
       </Button>
     </Container>
   );

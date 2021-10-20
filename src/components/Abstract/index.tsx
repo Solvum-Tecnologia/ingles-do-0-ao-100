@@ -69,10 +69,7 @@ const Abstract: React.FC = () => {
           </div>
         </div>
 
-        <BuyButton
-          title="Sim, Quero aprender inglês"
-          subtitle="Clique aqui para garantir sua matrícula"
-        />
+        <BuyButton />
       </Content>
     </Container>
   );
