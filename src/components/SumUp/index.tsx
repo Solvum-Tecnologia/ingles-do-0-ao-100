@@ -47,22 +47,22 @@ const SumUp: React.FC = () => {
         </div>
 
         <div className="value-total">
-          <h3 data-aos="fade-right">
+          {/* <h3 data-aos="fade-right">
             Valor Total <span> {formatNumber(valueTotal)}</span>
           </h3>
 
           <div data-aos="fade-left">
             <h3>Apenas nesta oferta</h3>
-          </div>
+          </div> */}
         </div>
 
         <div className="promotion">
-          <h3 data-aos="zoom-in-down" className="installment">
-            12x de <span>97,</span>14
+          {/* <h3 data-aos="zoom-in-down" className="installment">
+            12x de <span>77,</span>65
           </h3>
           <h3 data-aos="zoom-in-down" data-aos-delay="200">
-            Ou {formatNumber(997)} à vista
-          </h3>
+            Ou {formatNumber(797)} à vista
+          </h3> */}
         </div>
 
         <BuyButton />

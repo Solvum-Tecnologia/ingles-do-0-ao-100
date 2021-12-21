@@ -7,19 +7,26 @@ export const Container = styled.section`
   flex-direction: column;
   position: relative;
 
-  /* .background {
-    top: 0;
-    left: 0;
-    position: absolute;
+  .black {
+    background: ${({ theme }) => theme.container};
+    display: flex;
+    justify-content: center;
     width: 100%;
-    min-height: 80vh;
-    background: url('/assets/images/background.png') no-repeat;
-    background-size: cover;
-    z-index: 1;
-  } */
+    padding-top: 8px;
+    position: fixed;
+    top: 0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    img {
+      height: 60px;
+      max-width: 120px;
+      width: 100%;
+    }
+  }
 `;
 
 export const Content = styled.div`
+  /* margin-top: 60px; */
   display: flex;
   flex-direction: column;
   align-items: center;

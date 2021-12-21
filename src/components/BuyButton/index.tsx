@@ -13,7 +13,7 @@ const BuyButton: React.FC<Props> = ({ ...rest }) => {
         href={
           active
             ? 'https://payment.hotmart.com/K39846527P?checkoutMode=10'
-            : 'https://www.inglesdozeroaocem.com.br/espera'
+            : 'https://forms.gle/TsaK6eL6HWtcmMKS6'
         }
         data-aos="zoom-in"
         {...rest}

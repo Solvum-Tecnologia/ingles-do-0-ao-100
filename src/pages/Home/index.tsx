@@ -20,6 +20,9 @@ const Home: React.FC = () => {
   return (
     <>
       <Container>
+        {/* <div className="black">
+          <img src="/assets/images/black.png" alt="" />
+        </div> */}
         <div className="background" />
 
         <Content>
