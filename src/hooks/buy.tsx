@@ -16,7 +16,7 @@ export const BuyProvider: React.FC<Props> = ({ children }) => {
   const isActive = false;
   const linkBuy =
     'https://pay.hotmart.com/K39846527P?off=igm7id7w&checkoutMode=10&bid=1661452742055';
-  const linkWarning = 'https://forms.gle/ QcXd37U3WMSDdG6s7';
+  const linkWarning = 'https://forms.gle/QcXd37U3WMSDdG6s7';
 
   return (
     <BuyContext.Provider value={{ isActive, linkBuy, linkWarning }}>
