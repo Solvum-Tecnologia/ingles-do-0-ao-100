@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import { primary } from './styles/colors';
 import GlobalStyles from './styles/global';
 import 'aos/dist/aos.css';
+import { Hooks } from './hooks';
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -16,7 +17,9 @@ const App: React.FC = () => {
 
   return (
     <ThemeProvider theme={primary}>
-      <Home />
+      <Hooks>
+        <Home />
+      </Hooks>
       <GlobalStyles />
     </ThemeProvider>
   );

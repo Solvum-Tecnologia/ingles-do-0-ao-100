@@ -7,7 +7,7 @@ export const ButtonWhatsapp: React.FC = () => {
   return (
     <Container>
       <a
-        href="https://api.whatsapp.com/send?phone=5511989809037&text=Hello!%20Quero%20saber%20mais%20sobre%20o%20curso%20Ingl%C3%AAs%20do%20Zero%20ao%20Cem"
+        href="https://api.whatsapp.com/send?phone=555511996138587&text=Hello%2C%20Ingl%C3%AAs%20do%20Zero!%20Gostaria%20de%20saber%20mais%20sobre%20o%20curso"
         target="_blank"
         rel="noopener noreferrer"
       >

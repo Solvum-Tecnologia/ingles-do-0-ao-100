@@ -5,12 +5,15 @@ import BuyButton from '../BuyButton';
 import { Container, Content } from './styles';
 
 import topics from '../../db/topics';
+import { useBuy } from '../../hooks/buy';
 
 const SumUp: React.FC = () => {
   const valueTotal = topics.reduce(
     (total, number) => total + Number(number.value),
     56,
   );
+
+  const { isActive } = useBuy();
 
   return (
     <Container>
@@ -46,26 +49,30 @@ const SumUp: React.FC = () => {
           />
         </div>
 
-        <div className="value-total">
-          <h3 data-aos="fade-right">
-            Valor Total <span> {formatNumber(valueTotal)}</span>
-          </h3>
+        {isActive && (
+          <>
+            <div className="value-total">
+              <h3 data-aos="fade-right">
+                Valor Total <span> {formatNumber(valueTotal)}</span>
+              </h3>
 
-          <div data-aos="fade-left">
-            <h3>Apenas nesta oferta</h3>
-          </div>
-        </div>
+              <div data-aos="fade-left">
+                <h3>Apenas nesta oferta</h3>
+              </div>
+            </div>
 
-        <div className="promotion">
-          <h3 data-aos="zoom-in-down" className="installment">
-            12x de <span>97,</span>14
-          </h3>
-          <h3 data-aos="zoom-in-down" data-aos-delay="200">
-            Ou {formatNumber(997)} à vista
-          </h3>
-        </div>
+            <div className="promotion">
+              <h3 data-aos="zoom-in-down" className="installment">
+                12x de <span>91,</span>42
+              </h3>
+              <h3 data-aos="zoom-in-down" data-aos-delay="200">
+                Ou {formatNumber(1097)} à vista
+              </h3>
+            </div>
+          </>
+        )}
 
-        <BuyButton />
+        <BuyButton style={{ marginTop: isActive ? '40px' : '80px' }} />
       </Content>
     </Container>
   );
