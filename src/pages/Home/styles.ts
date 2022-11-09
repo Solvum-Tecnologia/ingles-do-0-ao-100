@@ -72,6 +72,7 @@ export const Content = styled.div`
         h2 {
           font-weight: bold;
           font-size: 2rem;
+          font-style: italic;
         }
 
         h3 {

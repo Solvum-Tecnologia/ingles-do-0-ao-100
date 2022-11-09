@@ -35,13 +35,11 @@ const Home: React.FC = () => {
           <div className="banner">
             <div className="text-men">
               <div className="text">
-                <h2 data-aos="zoom-in">
-                  Você quer aprender Inglês do Zero absoluto até um nível
-                  avançado de comunicação?
-                </h2>
+                <h2 data-aos="zoom-in">INGLÊS DO ZERO AO CEM</h2>
                 <h3 data-aos="fade-up" data-aos-delay="200">
-                  {`O Inglês do Zero ao Cem é o curso de inglês com mais recursos
-                  para aprendizado do país.`}
+                  {`
+                    O curso com mais recursos para aprendizado no país, do zero ao mais avançado, trabalhando todas as áreas do desenvolvimento do idioma
+                  `}
                 </h3>
               </div>
 
