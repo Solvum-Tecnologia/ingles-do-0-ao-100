@@ -20,9 +20,9 @@ const Home: React.FC = () => {
   return (
     <>
       <Container>
-        {/* <div className="black">
+        <div className="black">
           <img src="/assets/images/black.png" alt="" />
-        </div> */}
+        </div>
         <div className="background" />
 
         <Content>
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
                 <img
                   data-aos="fade-up"
                   data-aos-delay="400"
-                  src={MenImg}
+                  src="/assets/images/men.png"
                   alt="men"
                 />
               </div>

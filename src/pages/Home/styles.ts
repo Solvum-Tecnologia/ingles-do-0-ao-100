@@ -26,7 +26,7 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
-  /* margin-top: 60px; */
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,20 +45,22 @@ export const Content = styled.div`
   }
 
   .banner {
+    max-width: 1136px;
+    width: 100%;
     display: flex;
     flex: 1;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-between;
 
     .text-men {
-      max-width: 800px;
+      /* max-width: 800px; */
       display: flex;
       flex: 100%;
       justify-content: space-between;
 
       .text {
         flex: 50%;
-        padding-top: 24px;
+        padding-top: 80px;
 
         h2,
         h3 {
