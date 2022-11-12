@@ -6,9 +6,11 @@ export const Container = styled.section`
   align-items: center;
   flex-direction: column;
   position: relative;
+  background: url('/assets/images/background.png') no-repeat;
+  background-size: 100% 100%;
 
   .black {
-    background: ${({ theme }) => theme.container};
+    background: #212121;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -17,10 +19,39 @@ export const Container = styled.section`
     top: 0;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     z-index: 100;
+
     img {
       height: 60px;
       max-width: 120px;
       width: 100%;
+    }
+
+    .mobile {
+      display: none;
+      justify-content: flex-end;
+      flex: 1;
+      margin-top: -24px;
+
+      img {
+        height: 100px;
+        max-width: 180px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .black {
+      background: none;
+      box-shadow: none;
+      position: relative;
+
+      .mobile {
+        display: flex;
+      }
+
+      .desktop {
+        display: none;
+      }
     }
   }
 `;
@@ -31,12 +62,11 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 70vh;
+  min-height: 400px;
   z-index: 2;
   padding: 0 24px;
   padding-top: 24px;
-  background: url('/assets/images/background.png') no-repeat;
-  background-size: cover;
+
   overflow: hidden;
 
   .header {
@@ -49,30 +79,39 @@ export const Content = styled.div`
     width: 100%;
     display: flex;
     flex: 1;
-    align-items: flex-end;
     justify-content: space-between;
+    flex-direction: column;
+    padding-top: 40px;
+
+    .button {
+      margin-top: 40px;
+      > div {
+        display: block;
+      }
+    }
 
     .text-men {
-      /* max-width: 800px; */
       display: flex;
       flex: 100%;
       justify-content: space-between;
+      gap: 32px;
 
       .text {
         flex: 50%;
-        padding-top: 80px;
+        max-width: 600px;
+        padding-top: 40px;
+
+        padding-bottom: 24px;
 
         h2,
         h3 {
           text-align: left;
           letter-spacing: -1px;
-          max-width: 580px;
         }
 
         h2 {
           font-weight: bold;
           font-size: 2rem;
-          font-style: italic;
         }
 
         h3 {
@@ -86,13 +125,12 @@ export const Content = styled.div`
       .men {
         flex: 50%;
         display: flex;
-        align-self: flex-end;
         margin-right: -24px;
         max-width: 400px;
+        margin-top: -80px;
 
         img {
           width: 100%;
-          height: 100%;
           object-fit: contain;
           object-position: bottom;
         }
@@ -121,7 +159,7 @@ export const Content = styled.div`
       right: -60%;
     }
 
-    > div {
+    .banner {
       .text-men {
         .text {
           max-width: 500px;
@@ -135,11 +173,33 @@ export const Content = styled.div`
   }
 
   @media (max-width: 768px) {
-    min-height: 100vh;
-    > div {
+    margin-top: 0;
+    .banner {
+      min-height: calc(100vh - 100px);
+
+      padding: 32px 0;
+
+      .button {
+        > div {
+          display: flex;
+        }
+      }
+
+      .logo {
+        width: 180px;
+        align-self: center;
+
+        img {
+          width: 100%;
+        }
+      }
       .text-men {
         .text {
-          max-width: 400px;
+          max-width: 100%;
+          h2,
+          h3 {
+            text-align: center;
+          }
           h2 {
             font-size: 1.5rem;
           }
@@ -151,25 +211,10 @@ export const Content = styled.div`
 
         .men {
           max-height: 350px;
+          display: none;
         }
       }
     }
-  }
-
-  @media (max-width: 576px) {
-    > div {
-      .text-men {
-        flex-wrap: wrap;
-        justify-content: center;
-        .text {
-          margin-top: 100px;
-          min-width: 100%;
-        }
-      }
-    }
-  }
-
-  @media (max-width: 480px) {
   }
 `;
 
@@ -218,6 +263,9 @@ export const Preview = styled.div`
 
   @media (max-width: 576px) {
     > div {
+      h2 {
+        font-size: 1.2rem;
+      }
       iframe {
         max-height: 200px;
       }

@@ -13,34 +13,45 @@ import SumUp from '../../components/SumUp';
 
 import { Container, Content, Preview } from './styles';
 import Bonus from '../../components/Bonus';
-import MenImg from '../../assets/men.png';
-import { ButtonWhatsapp } from '../../components/ButtonWhatsapp';
+// import { ButtonWhatsapp } from '../../components/ButtonWhatsapp';
 
 const Home: React.FC = () => {
   return (
     <>
       <Container>
         <div className="black">
-          <img src="/assets/images/black.png" alt="" />
+          <div className="desktop">
+            <img src="/assets/images/black.png" alt="" />
+          </div>
+
+          <div className="mobile">
+            <img src="/assets/images/black_friday_mobile.png" alt="" />
+          </div>
         </div>
         <div className="background" />
 
         <Content>
-          <div className="header">
+          <div className="banner">
             <div className="logo">
               <img src="/assets/images/logo.svg" alt="INGLÊS DO 0 AO 100" />
             </div>
-          </div>
 
-          <div className="banner">
             <div className="text-men">
               <div className="text">
-                <h2 data-aos="zoom-in">INGLÊS DO ZERO AO CEM</h2>
                 <h3 data-aos="fade-up" data-aos-delay="200">
                   {`
-                    O curso com mais recursos para aprendizado no país, do zero ao mais avançado, trabalhando todas as áreas do desenvolvimento do idioma
+                    Você quer aprender Inglês do Zero absoluto até um nível avançado de comunicação, com um método testado e validado por mais de 1400 alunos?
                   `}
                 </h3>
+                <h3 data-aos="fade-up" data-aos-delay="200">
+                  {`
+                    Conheça todos os benefícios de um dos mais completos e com mais recursos para aprendizado do Brasil.
+                  `}
+                </h3>
+
+                <div className="button">
+                  <BuyButton />
+                </div>
               </div>
 
               <div className="men">
@@ -94,7 +105,7 @@ const Home: React.FC = () => {
 
       <Footer />
 
-      <ButtonWhatsapp />
+      {/* <ButtonWhatsapp /> */}
     </>
   );
 };
