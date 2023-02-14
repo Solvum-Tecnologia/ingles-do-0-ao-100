@@ -19,7 +19,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Container>
-        <div className="black">
+        {/* <div className="black">
           <div className="desktop">
             <img src="/assets/images/black.png" alt="" />
           </div>
@@ -27,7 +27,7 @@ const Home: React.FC = () => {
           <div className="mobile">
             <img src="/assets/images/black_friday_mobile.png" alt="" />
           </div>
-        </div>
+        </div> */}
         <div className="background" />
 
         <Content>

@@ -63,10 +63,10 @@ const SumUp: React.FC = () => {
 
             <div className="promotion">
               <h3 data-aos="zoom-in-down" className="installment">
-                12x de <span>91,</span>42
+                12x de <span>119,</span>46
               </h3>
               <h3 data-aos="zoom-in-down" data-aos-delay="200">
-                Ou {formatNumber(1097)} à vista
+                Ou {formatNumber(1197)} à vista
               </h3>
             </div>
           </>
