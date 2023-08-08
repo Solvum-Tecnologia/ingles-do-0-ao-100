@@ -14,8 +14,7 @@ interface Props {
 
 export const BuyProvider: React.FC<Props> = ({ children }) => {
   const isActive = true;
-  const linkBuy =
-    'https://pay.hotmart.com/K39846527P?off=3qzex1gb&checkoutMode=10';
+  const linkBuy = 'https://pay.hotmart.com/K39846527P?checkoutMode=10';
   const linkWarning = 'https://forms.gle/YCRKjwoHiuAkeonL7';
 
   return (
