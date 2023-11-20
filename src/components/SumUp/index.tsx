@@ -1,11 +1,11 @@
 import React from 'react';
-import formatNumber from '../../utils/formatNumber';
+import formatNumber from '~/utils/formatNumber';
 import BuyButton from '../BuyButton';
 
 import { Container, Content } from './styles';
 
-import topics from '../../db/topics';
-import { useBuy } from '../../hooks/buy';
+import topics from '~/db/topics';
+import { useBuy } from '~/hooks/buy';
 
 const SumUp: React.FC = () => {
   const valueTotal = topics.reduce(
@@ -24,7 +24,7 @@ const SumUp: React.FC = () => {
         </h2>
 
         <div className="topics">
-          {topics.map(item => (
+          {topics.map((item) => (
             <div className="item" key={item.id}>
               <img
                 data-aos="zoom-in"

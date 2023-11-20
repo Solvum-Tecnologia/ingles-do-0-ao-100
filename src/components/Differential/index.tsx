@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container, Content } from './styles';
 
-import differentials from '../../db/differentials';
+import differentials from '~/db/differentials';
 
 const Differential: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const Differential: React.FC = () => {
         </div>
 
         <div className="items">
-          {differentials.map(item => (
+          {differentials.map((item) => (
             <div data-aos="zoom-in" className="item" key={item.id}>
               <span>
                 <img src={`/assets/icons/${item.icon}`} alt="" />

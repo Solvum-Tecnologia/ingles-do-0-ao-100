@@ -4,7 +4,7 @@ import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel';
 
 import { Container, Content } from './styles';
 
-import modules from '../../db/modules';
+import modules from '~/db/modules';
 
 const Sessions: React.FC = () => {
   const [session, setSession] = useState(1);
@@ -25,7 +25,7 @@ const Sessions: React.FC = () => {
         <div className="menu" data-aos="zoom-in">
           <ul>
             <Carousel isRTL={false} breakPoints={breakPoints}>
-              {modules.map(module => (
+              {modules.map((module) => (
                 <li key={module.id}>
                   <button
                     type="button"
@@ -41,10 +41,10 @@ const Sessions: React.FC = () => {
         </div>
 
         {modules.map(
-          module =>
+          (module) =>
             module.id === session && (
               <div className="items" data-aos="flip-left" key={module.id}>
-                {module.classes.map(item => (
+                {module.classes.map((item) => (
                   <div className="item" key={item.id}>
                     <p>{item.title}</p>
                     <p>{item.description}</p>

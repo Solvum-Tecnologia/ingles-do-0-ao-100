@@ -1,7 +1,7 @@
 import React from 'react';
-import BuyButton from '../BuyButton';
 
 import { Container, Content } from './styles';
+import BuyButton from '../BuyButton';
 
 const Abstract: React.FC = () => {
   return (

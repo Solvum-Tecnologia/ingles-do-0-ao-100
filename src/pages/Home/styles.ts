@@ -57,7 +57,7 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
-  /* margin-top: 60px; */
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -219,7 +219,7 @@ export const Content = styled.div`
 `;
 
 export const Preview = styled.div`
-  background: ${props => props.theme.container};
+  background: ${(props) => props.theme.container};
   width: 100%;
   display: flex;
   justify-content: center;

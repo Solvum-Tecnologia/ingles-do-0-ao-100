@@ -1,19 +1,19 @@
 import React from 'react';
-import Abstract from '../../components/Abstract';
+import Abstract from '~/components/Abstract';
 
-import Benefit from '../../components/Benefit';
-import BuyButton from '../../components/BuyButton';
-import CommonQuestions from '../../components/CommonQuestions';
-import Documentary from '../../components/Documentary';
-import Feedback from '../../components/Feedback';
-import Differential from '../../components/Differential';
-import Footer from '../../components/Footer';
-import Sessions from '../../components/Sessions';
-import SumUp from '../../components/SumUp';
+import Benefit from '~/components/Benefit';
+import BuyButton from '~/components/BuyButton';
+import CommonQuestions from '~/components/CommonQuestions';
+import Documentary from '~/components/Documentary';
+import Feedback from '~/components/Feedback';
+import Differential from '~/components/Differential';
+import Footer from '~/components/Footer';
+import Sessions from '~/components/Sessions';
+import SumUp from '~/components/SumUp';
 
 import { Container, Content, Preview } from './styles';
-import Bonus from '../../components/Bonus';
-// import { ButtonWhatsapp } from '../../components/ButtonWhatsapp';
+import Bonus from '~/components/Bonus';
+// import { ButtonWhatsapp } from '~/components/ButtonWhatsapp';
 
 const Home: React.FC = () => {
   return (
