@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { FaPhotoVideo, FaBook, FaHeadphones } from 'react-icons/fa';
 import { useCountUp } from 'react-countup';
 import { Container, Content } from './styles';
@@ -25,11 +25,19 @@ const Bonus: React.FC = () => {
     startOnMount: false,
   });
 
-  document.addEventListener('aos:in:test', () => {
+  const aosEvent = useCallback(() => {
     startVideos();
     startText();
     startSentences();
-  });
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener('aos:in:test', aosEvent);
+
+    return () => {
+      document.removeEventListener('aos:in:test', aosEvent);
+    };
+  }, [aosEvent]);
 
   return (
     <Container>

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { ReactElement, useState } from 'react';
 
-import Carousel from 'react-elastic-carousel';
+import Carousel, { ReactElasticCarouselProps } from 'react-elastic-carousel';
 
 import { Container, Content } from './styles';
 
@@ -9,7 +9,7 @@ import modules from '../../db/modules';
 const Sessions: React.FC = () => {
   const [session, setSession] = useState(1);
 
-  const breakPoints = [
+  const breakPoints: ReactElasticCarouselProps['breakPoints'] = [
     { width: 1, itemsToShow: 1 },
     { width: 450, itemsToShow: 2 },
     { width: 550, itemsToShow: 3 },
@@ -43,7 +43,7 @@ const Sessions: React.FC = () => {
         {modules.map(
           module =>
             module.id === session && (
-              <div className="items" data-aos="flip-left">
+              <div className="items" data-aos="flip-left" key={module.id}>
                 {module.classes.map(item => (
                   <div className="item" key={item.id}>
                     <p>{item.title}</p>

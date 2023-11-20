@@ -4,12 +4,13 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'airbnb',
+    'eslint:recommended',
     'plugin:react/recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'plugin:import/recommended',
   ],
+  overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -18,24 +19,21 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'react-hooks', 'prettier'],
   rules: {
-    camelcase: 'off',
-    'react/prop-types': 'off',
-    'no-use-before-define': 'off',
-    'react/jsx-props-no-spreading': 'off',
     'prettier/prettier': 'error',
-    'react/jsx-one-expression-per-line': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-    'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
-    'import/prefer-default-export': 'off',
-    '@typescript-eslint/explicit-function-return-type': [
-      'error',
+    'react/jsx-filename-extension': [
+      1,
       {
-        allowExpressions: true,
+        extensions: ['.tsx'],
       },
     ],
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-key': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -44,6 +42,8 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'react/prop-types': 'off',
+    'react/display-name': 'off',
   },
   settings: {
     'import/resolver': {
