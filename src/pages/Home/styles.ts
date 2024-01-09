@@ -57,7 +57,7 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
-  margin-top: 60px;
+  /* margin-top: 60px; */
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -13,9 +13,9 @@ interface Props {
 }
 
 export const BuyProvider: React.FC<Props> = ({ children }) => {
-  const isActive = true;
+  const isActive = false;
   const linkBuy = 'https://pay.hotmart.com/K39846527P?checkoutMode=10';
-  const linkWarning = 'https://forms.gle/sPNJb51TeEMvHJJJ8';
+  const linkWarning = 'https://forms.gle/EFDDd98UpfQoXN6n6';
 
   return (
     <BuyContext.Provider value={{ isActive, linkBuy, linkWarning }}>

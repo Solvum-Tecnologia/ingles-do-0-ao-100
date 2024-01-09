@@ -3,10 +3,11 @@ import Aos from 'aos';
 
 import { ThemeProvider } from 'styled-components';
 import Home from './pages/Home';
-import { primary } from './styles/colors';
+
 import GlobalStyles from './styles/global';
 import 'aos/dist/aos.css';
 import { Hooks } from './hooks';
+import { theme } from './styles/theme';
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -16,7 +17,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <ThemeProvider theme={primary}>
+    <ThemeProvider theme={theme.defaultColors}>
       <Hooks>
         <Home />
       </Hooks>
