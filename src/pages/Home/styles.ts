@@ -57,7 +57,6 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
-  /* margin-top: 60px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,6 +67,10 @@ export const Content = styled.div`
   padding-top: 24px;
 
   overflow: hidden;
+
+  &.isBlack {
+    margin-top: 60px;
+  }
 
   .header {
     max-width: 1136px;

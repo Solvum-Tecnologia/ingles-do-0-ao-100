@@ -6,6 +6,7 @@ import { Container, Content } from './styles';
 
 import topics from '~/db/topics';
 import { useBuy } from '~/hooks/buy';
+import { envs } from '~/constants/envs';
 
 const SumUp: React.FC = () => {
   const valueTotal = topics.reduce(
@@ -63,10 +64,12 @@ const SumUp: React.FC = () => {
 
             <div className="promotion">
               <h3 data-aos="zoom-in-down" className="installment">
-                12x de <span>109,</span>48
+                {envs.PAYMENT_IN_INSTALLMENTS}x de{' '}
+                <span>{envs.INSTALLMENTS_PRICE?.split('.')[0]},</span>
+                {envs.INSTALLMENTS_PRICE?.split('.')[1].padEnd(2, '0')}
               </h3>
               <h3 data-aos="zoom-in-down" data-aos-delay="200">
-                Ou {formatNumber(1097)} à vista
+                Ou {formatNumber(Number(envs.CASH_PRICE))} à vista
               </h3>
             </div>
           </>

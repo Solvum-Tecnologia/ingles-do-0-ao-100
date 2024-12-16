@@ -1,4 +1,5 @@
 import React, { createContext, ReactNode, useContext } from 'react';
+import { envs } from '~/constants/envs';
 
 interface BouContextProps {
   isActive: boolean;
@@ -13,10 +14,9 @@ interface Props {
 }
 
 export const BuyProvider: React.FC<Props> = ({ children }) => {
-  const isActive = true;
-  const linkBuy =
-    'https://pay.hotmart.com/K39846527P?off=xctzhk9g&checkoutMode=10&bid=1711101002495';
-  const linkWarning = 'https://forms.gle/EFDDd98UpfQoXN6n6';
+  const isActive = envs.BUE_IS_ACTIVE === 'true';
+  const linkBuy = envs.LINK_BUE || '';
+  const linkWarning = envs.LINK_WARNING || '';
 
   return (
     <BuyContext.Provider value={{ isActive, linkBuy, linkWarning }}>

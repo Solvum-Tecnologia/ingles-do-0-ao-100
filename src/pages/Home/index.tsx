@@ -13,25 +13,33 @@ import SumUp from '~/components/SumUp';
 
 import { Container, Content, Preview } from './styles';
 import Bonus from '~/components/Bonus';
+import { envs } from '~/constants/envs';
+import classNames from 'classnames';
 // import { ButtonWhatsapp } from '~/components/ButtonWhatsapp';
 
 const Home: React.FC = () => {
   return (
     <>
       <Container>
-        {/* <div className="black">
-          <div className="desktop">
-            <img src="/assets/images/black.png" alt="" />
-          </div>
+        {envs.IS_BLACK === 'true' && (
+          <div className="black">
+            <div className="desktop">
+              <img src="/assets/images/black.png" alt="" />
+            </div>
 
-          <div className="mobile">
-            <img src="/assets/images/black_friday_mobile.png" alt="" />
+            <div className="mobile">
+              <img src="/assets/images/black_friday_mobile.png" alt="" />
+            </div>
           </div>
-        </div> */}
+        )}
 
         <div className="background" />
 
-        <Content>
+        <Content
+          className={classNames({
+            isBlack: envs.IS_BLACK === 'true',
+          })}
+        >
           <div className="banner">
             <div className="logo">
               <img src="/assets/images/logo.svg" alt="INGLÊS DO 0 AO 100" />

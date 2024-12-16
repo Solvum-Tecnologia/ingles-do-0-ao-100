@@ -8,6 +8,7 @@ import GlobalStyles from './styles/global';
 import 'aos/dist/aos.css';
 import { Hooks } from './hooks';
 import { theme } from './styles/theme';
+import { envs } from './constants/envs';
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -16,8 +17,11 @@ const App: React.FC = () => {
     });
   }, []);
 
+  const selectTheme =
+    envs.IS_BLACK === 'true' ? theme.nightColors : theme.defaultColors;
+
   return (
-    <ThemeProvider theme={theme.defaultColors}>
+    <ThemeProvider theme={selectTheme}>
       <Hooks>
         <Home />
       </Hooks>
