@@ -15,8 +15,11 @@ interface Props {
 
 export const BuyProvider: React.FC<Props> = ({ children }) => {
   const isActive = envs.BUE_IS_ACTIVE === 'true';
-  const linkBuy = envs.LINK_BUE || '';
-  const linkWarning = envs.LINK_WARNING || '';
+  // const linkBuy = envs.LINK_BUE || '';
+  const linkBuy = window.env?.LINK_BUE || '';
+
+  // const linkWarning = envs.LINK_WARNING || '';
+  const linkWarning = window.env?.LINK_WARNING || '';
 
   return (
     <BuyContext.Provider value={{ isActive, linkBuy, linkWarning }}>
