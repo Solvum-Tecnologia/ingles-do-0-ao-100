@@ -19,8 +19,8 @@ const BuyButton: React.FC<Props> = ({ ...rest }) => {
       >
         {isActive ? (
           <>
-            Sim, Quero aprender inglês
-            <span>Clique aqui para garantir sua matrícula</span>
+            {window.env?.BUTTON_TITLE}
+            <span>{window.env?.BUTTON_TEXT}</span>
           </>
         ) : (
           <>Me avise com prioridade</>

@@ -64,12 +64,17 @@ const SumUp: React.FC = () => {
 
             <div className="promotion">
               <h3 data-aos="zoom-in-down" className="installment">
-                {envs.PAYMENT_IN_INSTALLMENTS}x de{' '}
+                {/* {envs.PAYMENT_IN_INSTALLMENTS}x de{' '}
                 <span>{envs.INSTALLMENTS_PRICE?.split('.')[0]},</span>
-                {envs.INSTALLMENTS_PRICE?.split('.')[1].padEnd(2, '0')}
+                {envs.INSTALLMENTS_PRICE?.split('.')[1].padEnd(2, '0')} */}
+                {window.env?.PAYMENT_IN_INSTALLMENTS}x de{' '}
+                <span>{window.env?.INSTALLMENTS_PRICE?.split('.')[0]},</span>
+                {window.env?.INSTALLMENTS_PRICE?.split('.')[1].padEnd(2, '0')}
               </h3>
               <h3 data-aos="zoom-in-down" data-aos-delay="200">
-                Ou {formatNumber(Number(envs.CASH_PRICE))} à vista
+                {/* Ou {formatNumber(Number(envs.CASH_PRICE))} à vista */}
+                Ou {formatNumber(Number(window.env?.CASH_PRICE))} à vista
+
               </h3>
             </div>
           </>
